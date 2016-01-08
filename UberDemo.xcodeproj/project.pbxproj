@@ -256,6 +256,13 @@
 		DC8A8F971C37EF4E00D273B0 /* VerifyPhonePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8A8F961C37EF4E00D273B0 /* VerifyPhonePage.xib */; };
 		DC8A8F9B1C37F02700D273B0 /* verify_digit_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8A8F9A1C37F02700D273B0 /* verify_digit_back@2x.png */; };
 		DC8A8F9D1C37F2BA00D273B0 /* VerifyPhonePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A8F9C1C37F2BA00D273B0 /* VerifyPhonePage.swift */; };
+		DC8EC7221C3FF68F00C7152F /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EC7201C3FF68F00C7152F /* SettingPage.swift */; };
+		DC8EC7231C3FF68F00C7152F /* SettingPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8EC7211C3FF68F00C7152F /* SettingPage.xib */; };
+		DC8EC7261C40004400C7152F /* HeaderBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8EC7241C40004400C7152F /* HeaderBack@2x.png */; };
+		DC8EC7271C40004400C7152F /* HeaderInput@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8EC7251C40004400C7152F /* HeaderInput@2x.png */; };
+		DC8EC7291C40033A00C7152F /* AccountBack.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8EC7281C40033A00C7152F /* AccountBack.png */; };
+		DC8EC72B1C40070000C7152F /* UserCenterBack.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8EC72A1C40070000C7152F /* UserCenterBack.png */; };
+		DC8EC72D1C400A1100C7152F /* DIzhiBack.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8EC72C1C400A1100C7152F /* DIzhiBack.png */; };
 		DCC171211C2FEEDB00A4F74C /* FxActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1711E1C2FEEDB00A4F74C /* FxActivity.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DCC171221C2FEEDB00A4F74C /* FxActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC171201C2FEEDB00A4F74C /* FxActivityIndicator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DCC171241C2FF44700A4F74C /* Loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC171231C2FF44700A4F74C /* Loading@2x.png */; };
@@ -545,6 +552,13 @@
 		DC8A8F961C37EF4E00D273B0 /* VerifyPhonePage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerifyPhonePage.xib; sourceTree = "<group>"; };
 		DC8A8F9A1C37F02700D273B0 /* verify_digit_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "verify_digit_back@2x.png"; sourceTree = "<group>"; };
 		DC8A8F9C1C37F2BA00D273B0 /* VerifyPhonePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyPhonePage.swift; sourceTree = "<group>"; };
+		DC8EC7201C3FF68F00C7152F /* SettingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		DC8EC7211C3FF68F00C7152F /* SettingPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingPage.xib; sourceTree = "<group>"; };
+		DC8EC7241C40004400C7152F /* HeaderBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeaderBack@2x.png"; path = "Resources/Images/Background/HeaderBack@2x.png"; sourceTree = "<group>"; };
+		DC8EC7251C40004400C7152F /* HeaderInput@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeaderInput@2x.png"; path = "Resources/Images/Background/HeaderInput@2x.png"; sourceTree = "<group>"; };
+		DC8EC7281C40033A00C7152F /* AccountBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AccountBack.png; path = Resources/Images/Background/AccountBack.png; sourceTree = "<group>"; };
+		DC8EC72A1C40070000C7152F /* UserCenterBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UserCenterBack.png; path = Resources/Images/Background/UserCenterBack.png; sourceTree = "<group>"; };
+		DC8EC72C1C400A1100C7152F /* DIzhiBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DIzhiBack.png; path = Resources/Images/Background/DIzhiBack.png; sourceTree = "<group>"; };
 		DCC1711C1C2FEEDA00A4F74C /* UberDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UberDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		DCC1711D1C2FEEDB00A4F74C /* FxActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxActivity.h; path = Utility/FxActivity.h; sourceTree = "<group>"; };
 		DCC1711E1C2FEEDB00A4F74C /* FxActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FxActivity.m; path = Utility/FxActivity.m; sourceTree = "<group>"; };
@@ -966,6 +980,11 @@
 		DC6F5C141C262B3500BAB5BC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DC8EC72C1C400A1100C7152F /* DIzhiBack.png */,
+				DC8EC72A1C40070000C7152F /* UserCenterBack.png */,
+				DC8EC7281C40033A00C7152F /* AccountBack.png */,
+				DC8EC7241C40004400C7152F /* HeaderBack@2x.png */,
+				DC8EC7251C40004400C7152F /* HeaderInput@2x.png */,
 				DC8A8F9A1C37F02700D273B0 /* verify_digit_back@2x.png */,
 				DC8A8F7D1C37AC9100D273B0 /* AliPay@2x.png */,
 				DC8A8F7E1C37AC9100D273B0 /* BaiDuWallet@2x.png */,
@@ -1022,6 +1041,8 @@
 				DC1A00D21C3AA18A00CD13E2 /* HomePage.xib */,
 				DC1A00D51C3AB39A00CD13E2 /* UserCenterPage.swift */,
 				DC1A00D61C3AB39A00CD13E2 /* UserCenterPage.xib */,
+				DC8EC7201C3FF68F00C7152F /* SettingPage.swift */,
+				DC8EC7211C3FF68F00C7152F /* SettingPage.xib */,
 			);
 			name = Page;
 			sourceTree = "<group>";
@@ -1189,6 +1210,7 @@
 				DC078A071C284A8D003F0467 /* logo-034.png in Resources */,
 				DC078A611C284A8D003F0467 /* logo-064.png in Resources */,
 				DC078A001C284A8D003F0467 /* logo-031@3x.png in Resources */,
+				DC8EC72D1C400A1100C7152F /* DIzhiBack.png in Resources */,
 				DC0789C61C284A8D003F0467 /* logo-012@2x.png in Resources */,
 				DC0789E81C284A8D003F0467 /* logo-023@3x.png in Resources */,
 				DC078A081C284A8D003F0467 /* logo-034@2x.png in Resources */,
@@ -1218,6 +1240,7 @@
 				DC0789CD1C284A8D003F0467 /* logo-014@3x.png in Resources */,
 				DC0789D31C284A8D003F0467 /* logo-016@3x.png in Resources */,
 				DC0789A71C284A8D003F0467 /* logo-002.png in Resources */,
+				DC8EC7231C3FF68F00C7152F /* SettingPage.xib in Resources */,
 				DC0789B01C284A8D003F0467 /* logo-005.png in Resources */,
 				DC8A8F8D1C37B3EF00D273B0 /* YinLianPage.xib in Resources */,
 				DC078A541C284A8D003F0467 /* logo-059@3x.png in Resources */,
@@ -1235,6 +1258,8 @@
 				DC078A0B1C284A8D003F0467 /* logo-035@2x.png in Resources */,
 				DC078A551C284A8D003F0467 /* logo-060.png in Resources */,
 				DC0789B81C284A8D003F0467 /* logo-007@3x.png in Resources */,
+				DC8EC7291C40033A00C7152F /* AccountBack.png in Resources */,
+				DC8EC7261C40004400C7152F /* HeaderBack@2x.png in Resources */,
 				DC078A191C284A8D003F0467 /* logo-040.png in Resources */,
 				DC078A691C284A8D003F0467 /* logo-066@3x.png in Resources */,
 				DC0789BB1C284A8D003F0467 /* logo-008@3x.png in Resources */,
@@ -1302,6 +1327,7 @@
 				DC0789E41C284A8D003F0467 /* logo-022@2x.png in Resources */,
 				DC0789E61C284A8D003F0467 /* logo-023.png in Resources */,
 				DC0789DD1C284A8D003F0467 /* logo-020.png in Resources */,
+				DC8EC72B1C40070000C7152F /* UserCenterBack.png in Resources */,
 				DC078A1B1C284A8D003F0467 /* logo-040@3x.png in Resources */,
 				DC0789A21C284A8D003F0467 /* logo-000@2x.png in Resources */,
 				DC078A331C284A8D003F0467 /* logo-048@3x.png in Resources */,
@@ -1363,6 +1389,7 @@
 				DC078A361C284A8D003F0467 /* logo-049@3x.png in Resources */,
 				DC8A8F761C3767A100D273B0 /* UserInfoPage.xib in Resources */,
 				DC0789DA1C284A8D003F0467 /* logo-019.png in Resources */,
+				DC8EC7271C40004400C7152F /* HeaderInput@2x.png in Resources */,
 				DC8A8F841C37AC9100D273B0 /* YinLian@2x.png in Resources */,
 				DC078A381C284A8D003F0467 /* logo-050@2x.png in Resources */,
 				DC078A631C284A8D003F0467 /* logo-064@3x.png in Resources */,
@@ -1397,6 +1424,7 @@
 				DCC171371C3044DD00A4F74C /* FxString.m in Sources */,
 				DC6F5C2D1C2633B300BAB5BC /* GuidePage.swift in Sources */,
 				DC6F5C1A1C262FF700BAB5BC /* UserInfo.swift in Sources */,
+				DC8EC7221C3FF68F00C7152F /* SettingPage.swift in Sources */,
 				DCC1712A1C2FFD1500A4F74C /* UserInfoPage.swift in Sources */,
 				DCC171211C2FEEDB00A4F74C /* FxActivity.m in Sources */,
 				DC6F5C1E1C26324A00BAB5BC /* FXOperation.swift in Sources */,

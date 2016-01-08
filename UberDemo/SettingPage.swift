@@ -1,26 +1,23 @@
 //
-//  UserCenterPage.swift
+//  SettingPage.swift
 //  UberDemo
 //
-//  Created by 江祎 on 16/1/4.
+//  Created by 江祎 on 16/1/8.
 //  Copyright © 2016年 jiangyi. All rights reserved.
 //
 
 import UIKit
 
-class UserCenterPage: FxBasePage {
+class SettingPage: FxBasePage {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet var userBackView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setNavigationItem("Close.png", selector: "doBack", isRight: false)
+        scrollView.addSubview(userBackView)
     }
 
-    @IBAction func doSetting(sender: UIButton) {
-        let page = SettingPage()
-        let navPage = UINavigationController(rootViewController: page)
-        self.presentViewController(navPage, animated: true, completion:nil)
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

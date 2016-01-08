@@ -47,7 +47,7 @@ class HomePage: FxBasePage {
     func showLeftPanel(){
         showingLeft = true
         showCenterView(leftView!, offset: -2, shadow: true)
-        UIView.animateWithDuration(1.0, delay: 0, options: .BeginFromCurrentState, animations: {
+        UIView.animateWithDuration(0.5, delay: 0, options: .BeginFromCurrentState, animations: {
             var frame = self.leftView?.frame
             frame?.origin.x = 0
             self.leftView?.frame = frame!
@@ -64,7 +64,7 @@ class HomePage: FxBasePage {
     }
     func showCenterPanel(){
         showingLeft = false
-        UIView.animateWithDuration(1.0, delay: 0, options: .BeginFromCurrentState, animations: {
+        UIView.animateWithDuration(0.5, delay: 0, options: .BeginFromCurrentState, animations: {
             var frame = self.leftView?.frame
             frame?.origin.x = -frame!.size.width
             self.leftView?.frame = frame!
