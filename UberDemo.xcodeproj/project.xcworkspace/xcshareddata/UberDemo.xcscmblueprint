@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F66E8DD00B3ED131CF2416C3F0E0DBA48979E276",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3A5EEE6A17D1C76C55B6B30E8357BC1409FE5A08" : 0,
+    "F66E8DD00B3ED131CF2416C3F0E0DBA48979E276" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EAA0FA54-42B1-43FA-A509-E894EC20176E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3A5EEE6A17D1C76C55B6B30E8357BC1409FE5A08" : "UberDemo\/UberDemo\/",
+    "F66E8DD00B3ED131CF2416C3F0E0DBA48979E276" : "UberDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UberDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UberDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/aotian\/Uber.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3A5EEE6A17D1C76C55B6B30E8357BC1409FE5A08"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aotian\/UberDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F66E8DD00B3ED131CF2416C3F0E0DBA48979E276"
+    }
+  ]
+}

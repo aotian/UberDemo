@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuidePage" customModule="UberDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="BackImageView" destination="R7C-js-x8S" id="Xtm-tZ-YCC"/>
+                <outlet property="BackView" destination="Nk1-rJ-VJ0" id="8xx-qV-l7c"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wMW-YL-GuW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-067.png" translatesAutoresizingMaskIntoConstraints="NO" id="R7C-js-x8S">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nk1-rJ-VJ0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcL-Uw-vKp">
+                            <rect key="frame" x="15" y="499" width="180" height="44"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="PdR-gD-1Ea"/>
+                                <constraint firstAttribute="width" constant="180" id="sVm-1l-tFE"/>
+                            </constraints>
+                            <state key="normal" title="登陆">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doLogin" destination="-1" eventType="touchUpInside" id="jwN-dz-vua"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seF-oq-rtf">
+                            <rect key="frame" x="125" y="499" width="180" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.73333333333333328" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="gVT-Bd-3Nq"/>
+                                <constraint firstAttribute="width" constant="180" id="reB-th-aZO"/>
+                            </constraints>
+                            <state key="normal" title="注册">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doRegister" destination="-1" eventType="touchUpInside" id="uTI-9C-bOz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="seF-oq-rtf" secondAttribute="trailing" constant="109" id="Eh3-Ww-fvs"/>
+                        <constraint firstAttribute="bottom" secondItem="vcL-Uw-vKp" secondAttribute="bottom" constant="193" id="XQL-5T-hPM"/>
+                        <constraint firstItem="vcL-Uw-vKp" firstAttribute="leading" secondItem="Nk1-rJ-VJ0" secondAttribute="leading" constant="15" id="tKZ-0X-psJ"/>
+                        <constraint firstAttribute="bottom" secondItem="seF-oq-rtf" secondAttribute="bottom" constant="193" id="tzU-Zo-wgb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Nk1-rJ-VJ0" secondAttribute="trailing" constant="-94" id="GId-Ox-BaS"/>
+                <constraint firstAttribute="bottom" secondItem="R7C-js-x8S" secondAttribute="bottom" id="dYX-fI-ci0"/>
+                <constraint firstItem="Nk1-rJ-VJ0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jea-6I-Wei"/>
+                <constraint firstAttribute="bottom" secondItem="Nk1-rJ-VJ0" secondAttribute="bottom" constant="-168" id="mgW-GV-PIo"/>
+                <constraint firstAttribute="trailing" secondItem="R7C-js-x8S" secondAttribute="trailing" id="oFw-sB-gGY"/>
+                <constraint firstItem="Nk1-rJ-VJ0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oxz-Kj-AmM"/>
+                <constraint firstItem="R7C-js-x8S" firstAttribute="top" secondItem="Nk1-rJ-VJ0" secondAttribute="top" id="rm3-bb-lAD"/>
+                <constraint firstItem="R7C-js-x8S" firstAttribute="leading" secondItem="Nk1-rJ-VJ0" secondAttribute="leading" id="yRR-3K-1Ol"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo-067.png" width="277" height="277"/>
+    </resources>
+</document>

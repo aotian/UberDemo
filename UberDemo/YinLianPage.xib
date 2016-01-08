@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YinLianPage" customModule="UberDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Ghs-vg-y1l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品描述：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="967-FC-GkF">
+                    <rect key="frame" x="43" y="101" width="90" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="JKD-pn-JBY"/>
+                        <constraint firstAttribute="width" constant="90" id="Jus-HZ-E4Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品价格：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pw8-5Y-tAc">
+                    <rect key="frame" x="43" y="149" width="90" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="cgd-wi-pzR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBeacon设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWe-ZG-kVB">
+                    <rect key="frame" x="178" y="101" width="129" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="129" id="vjV-cP-Kys"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="64元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxG-8t-TbB">
+                    <rect key="frame" x="178" y="148" width="90" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="OeW-cl-RBW"/>
+                        <constraint firstAttribute="width" constant="90" id="Qes-WX-D9K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9D-Ik-lnF">
+                    <rect key="frame" x="147" y="203" width="88" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="88" id="tas-N3-PQd"/>
+                    </constraints>
+                    <state key="normal" title="支付"/>
+                    <connections>
+                        <action selector="doPay:" destination="-1" eventType="touchUpInside" id="e2e-A5-COm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="967-FC-GkF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="43" id="0M3-4I-jeA"/>
+                <constraint firstItem="zxG-8t-TbB" firstAttribute="top" secondItem="FWe-ZG-kVB" secondAttribute="bottom" constant="26" id="2Su-9L-6mM"/>
+                <constraint firstItem="a9D-Ik-lnF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="147" id="6uu-wy-j5o"/>
+                <constraint firstItem="FWe-ZG-kVB" firstAttribute="leading" secondItem="967-FC-GkF" secondAttribute="trailing" constant="45" id="BBe-rx-M2A"/>
+                <constraint firstItem="a9D-Ik-lnF" firstAttribute="top" secondItem="zxG-8t-TbB" secondAttribute="bottom" constant="34" id="BOa-KP-Qx0"/>
+                <constraint firstItem="967-FC-GkF" firstAttribute="firstBaseline" secondItem="FWe-ZG-kVB" secondAttribute="firstBaseline" id="G9d-vl-Qg0"/>
+                <constraint firstItem="pw8-5Y-tAc" firstAttribute="leading" secondItem="967-FC-GkF" secondAttribute="leading" id="LTd-bj-M0s"/>
+                <constraint firstItem="FWe-ZG-kVB" firstAttribute="baseline" secondItem="967-FC-GkF" secondAttribute="baseline" id="N11-Re-nle"/>
+                <constraint firstItem="967-FC-GkF" firstAttribute="trailing" secondItem="pw8-5Y-tAc" secondAttribute="trailing" id="lLB-Ch-9cg"/>
+                <constraint firstItem="pw8-5Y-tAc" firstAttribute="top" secondItem="967-FC-GkF" secondAttribute="bottom" constant="27" id="loi-fZ-eGG"/>
+                <constraint firstItem="FWe-ZG-kVB" firstAttribute="leading" secondItem="zxG-8t-TbB" secondAttribute="leading" id="vKX-UK-gwY"/>
+                <constraint firstItem="967-FC-GkF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="101" id="yWL-Fh-Krw"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>
