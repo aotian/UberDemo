@@ -9,7 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingPage" customModule="UberDemo" customModuleProvider="target">
             <connections>
                 <outlet property="scrollView" destination="Z5V-dH-Zsb" id="ggq-uB-tGQ"/>
-                <outlet property="userBackView" destination="NXZ-Qs-arr" id="uj9-0D-hK8"/>
+                <outlet property="userBackView" destination="NXZ-Qs-arr" id="9Q9-2H-6jx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +18,18 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5V-dH-Zsb">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5V-dH-Zsb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Z5V-dH-Zsb" secondAttribute="trailing" id="5jt-z6-Qt2"/>
                 <constraint firstItem="Z5V-dH-Zsb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8n2-1o-Vhj"/>
-                <constraint firstAttribute="bottom" secondItem="Z5V-dH-Zsb" secondAttribute="bottom" id="CdU-PI-0z2"/>
+                <constraint firstAttribute="bottom" secondItem="Z5V-dH-Zsb" secondAttribute="bottom" constant="50" id="CdU-PI-0z2"/>
                 <constraint firstItem="Z5V-dH-Zsb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KID-bw-uVS"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="NXZ-Qs-arr">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -102,16 +102,12 @@
                         <constraint firstAttribute="height" constant="128" id="rS5-o9-HfW"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DIzhiBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="wif-EJ-86r">
-                    <rect key="frame" x="12" y="506" width="297" height="128"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="dMO-fa-EOt" firstAttribute="trailing" secondItem="HVv-rN-E3M" secondAttribute="trailing" id="3lW-0G-b0Q"/>
                 <constraint firstItem="Q1Z-Gt-NeE" firstAttribute="top" secondItem="Rer-Ot-OMb" secondAttribute="bottom" constant="31" id="4Vg-Hs-ZdN"/>
                 <constraint firstItem="dMO-fa-EOt" firstAttribute="trailing" secondItem="e5n-gt-4uV" secondAttribute="trailing" id="7HJ-ml-Q5W"/>
-                <constraint firstItem="wif-EJ-86r" firstAttribute="top" secondItem="Q1Z-Gt-NeE" secondAttribute="bottom" constant="8" symbolic="YES" id="8e0-Hz-HwD"/>
                 <constraint firstItem="Rer-Ot-OMb" firstAttribute="leading" secondItem="NXZ-Qs-arr" secondAttribute="leading" id="CWM-z4-fG8"/>
                 <constraint firstAttribute="trailing" secondItem="Rer-Ot-OMb" secondAttribute="trailing" constant="15" id="ETP-DM-ruy"/>
                 <constraint firstItem="jN5-eV-OK2" firstAttribute="leading" secondItem="Gh7-xk-3Pt" secondAttribute="leading" id="Ide-wS-Adb"/>
@@ -126,21 +122,18 @@
                 <constraint firstItem="dMO-fa-EOt" firstAttribute="leading" secondItem="e5n-gt-4uV" secondAttribute="leading" id="ezC-Id-E7j"/>
                 <constraint firstItem="yWC-ST-oAU" firstAttribute="centerX" secondItem="0Of-sg-MXd" secondAttribute="centerX" id="hFE-Cr-amL"/>
                 <constraint firstItem="dMO-fa-EOt" firstAttribute="leading" secondItem="HVv-rN-E3M" secondAttribute="leading" id="hXN-Fw-lYH"/>
-                <constraint firstItem="wif-EJ-86r" firstAttribute="centerX" secondItem="NXZ-Qs-arr" secondAttribute="centerX" id="htA-0o-bSv"/>
                 <constraint firstItem="yWC-ST-oAU" firstAttribute="top" secondItem="Gh7-xk-3Pt" secondAttribute="top" id="mfq-zP-MGO"/>
                 <constraint firstItem="Gh7-xk-3Pt" firstAttribute="top" secondItem="NXZ-Qs-arr" secondAttribute="top" constant="87" id="nfY-rh-jxA"/>
                 <constraint firstItem="e3A-bd-pke" firstAttribute="top" secondItem="NXZ-Qs-arr" secondAttribute="top" constant="93" id="qKS-Dq-6BG"/>
                 <constraint firstItem="Q1Z-Gt-NeE" firstAttribute="leading" secondItem="NXZ-Qs-arr" secondAttribute="leadingMargin" id="rRv-3M-Mrv"/>
                 <constraint firstItem="jN5-eV-OK2" firstAttribute="top" secondItem="Gh7-xk-3Pt" secondAttribute="bottom" constant="23" id="rxK-uj-yE7"/>
                 <constraint firstItem="e5n-gt-4uV" firstAttribute="top" secondItem="yWC-ST-oAU" secondAttribute="bottom" constant="55" id="s3n-00-dpA"/>
-                <constraint firstItem="wif-EJ-86r" firstAttribute="leading" secondItem="NXZ-Qs-arr" secondAttribute="leading" constant="12" id="sgl-BP-Xpq"/>
                 <constraint firstItem="0Of-sg-MXd" firstAttribute="leading" secondItem="Gh7-xk-3Pt" secondAttribute="trailing" constant="10" id="t5K-JC-De9"/>
                 <constraint firstItem="Rer-Ot-OMb" firstAttribute="top" secondItem="0Of-sg-MXd" secondAttribute="bottom" constant="50" id="vNP-VZ-bWy"/>
                 <constraint firstAttribute="trailing" secondItem="e3A-bd-pke" secondAttribute="trailing" constant="20" id="wn8-ad-icC"/>
                 <constraint firstItem="e3A-bd-pke" firstAttribute="trailing" secondItem="yWC-ST-oAU" secondAttribute="trailing" id="xmn-nU-pkc"/>
                 <constraint firstItem="dMO-fa-EOt" firstAttribute="top" secondItem="e5n-gt-4uV" secondAttribute="bottom" constant="11" id="yTc-5j-0va"/>
                 <constraint firstItem="0Of-sg-MXd" firstAttribute="top" secondItem="e3A-bd-pke" secondAttribute="bottom" constant="8" symbolic="YES" id="ycb-DS-A9d"/>
-                <constraint firstAttribute="bottom" secondItem="wif-EJ-86r" secondAttribute="bottom" constant="-66" id="yk1-H6-slT"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>

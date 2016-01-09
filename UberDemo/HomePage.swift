@@ -13,7 +13,7 @@ class HomePage: FxBasePage {
     var leftView:UIView?
     var backControl:UIControl!
     var showingLeft:Bool!
-    var userCenterPage:UserCenterPage?
+    var centerPage:UserCenterPage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,9 +115,18 @@ class HomePage: FxBasePage {
     }
     
     func addUserCenterView(){
-        userCenterPage = UserCenterPage()
-        userCenterPage!.view.frame = leftView!.bounds
-        leftView?.addSubview((userCenterPage?.view)!)
+        centerPage = UserCenterPage()
+        centerPage?.owner = self
+        centerPage!.view.frame = leftView!.bounds
+        leftView?.addSubview((centerPage?.view)!)
+    }
+    
+    func doShowSetting(){
+        
+        let page = SettingPage()
+        let navPage = UINavigationController(rootViewController: page)
+        self.presentViewController(navPage, animated: true, completion: nil)
+        showCenterPanel()
     }
     func doTapCenter(sender:UIButton){
         if showingLeft!{

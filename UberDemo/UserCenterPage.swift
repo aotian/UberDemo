@@ -9,6 +9,8 @@
 import UIKit
 
 class UserCenterPage: FxBasePage {
+    
+    var owner:FxBasePage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +19,8 @@ class UserCenterPage: FxBasePage {
     }
 
     @IBAction func doSetting(sender: UIButton) {
-        let page = SettingPage()
-        let navPage = UINavigationController(rootViewController: page)
-        self.presentViewController(navPage, animated: true, completion:nil)
+        let own = self.owner as! HomePage
+        own.doShowSetting()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
