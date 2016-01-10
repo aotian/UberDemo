@@ -256,6 +256,9 @@
 		DC750FB11C4240C100636D26 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC750FB01C4240C100636D26 /* CoreTelephony.framework */; };
 		DC750FB31C4240D400636D26 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC750FB21C4240D400636D26 /* libstdc++.6.0.9.tbd */; };
 		DC750FB61C4241DB00636D26 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC750FB51C4241DB00636D26 /* mapapi.bundle */; };
+		DC750FB81C424BB200636D26 /* HomePage-Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC750FB71C424BB200636D26 /* HomePage-Slider.swift */; };
+		DC750FBA1C424E4E00636D26 /* HomePage-Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC750FB91C424E4E00636D26 /* HomePage-Map.swift */; };
+		DC750FBC1C42569700636D26 /* map-taxi.png in Resources */ = {isa = PBXBuildFile; fileRef = DC750FBB1C42569700636D26 /* map-taxi.png */; };
 		DC8A8F731C32D56B00D273B0 /* Back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8A8F711C32D56B00D273B0 /* Back@2x.png */; };
 		DC8A8F741C32D56B00D273B0 /* Close.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8A8F721C32D56B00D273B0 /* Close.png */; };
 		DC8A8F761C3767A100D273B0 /* UserInfoPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8A8F751C3767A100D273B0 /* UserInfoPage.xib */; };
@@ -566,6 +569,9 @@
 		DC750FB01C4240C100636D26 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		DC750FB21C4240D400636D26 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		DC750FB51C4241DB00636D26 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapAPI/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
+		DC750FB71C424BB200636D26 /* HomePage-Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomePage-Slider.swift"; sourceTree = "<group>"; };
+		DC750FB91C424E4E00636D26 /* HomePage-Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomePage-Map.swift"; sourceTree = "<group>"; };
+		DC750FBB1C42569700636D26 /* map-taxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map-taxi.png"; path = "../../../../Desktop/uber/资源/UI资源/Images/Car/map-taxi.png"; sourceTree = "<group>"; };
 		DC8A8F711C32D56B00D273B0 /* Back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back@2x.png"; sourceTree = "<group>"; };
 		DC8A8F721C32D56B00D273B0 /* Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close.png; sourceTree = "<group>"; };
 		DC8A8F751C3767A100D273B0 /* UserInfoPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoPage.xib; sourceTree = "<group>"; };
@@ -1032,6 +1038,7 @@
 		DC6F5C141C262B3500BAB5BC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DC750FBB1C42569700636D26 /* map-taxi.png */,
 				DC8EC72C1C400A1100C7152F /* DIzhiBack.png */,
 				DC8EC72A1C40070000C7152F /* UserCenterBack.png */,
 				DC8EC7281C40033A00C7152F /* AccountBack.png */,
@@ -1091,6 +1098,8 @@
 				DC8A8F941C37BE2A00D273B0 /* FxPayPlugin.h */,
 				DC8A8F9C1C37F2BA00D273B0 /* VerifyPhonePage.swift */,
 				DC1A00D11C3AA18A00CD13E2 /* HomePage.swift */,
+				DC750FB91C424E4E00636D26 /* HomePage-Map.swift */,
+				DC750FB71C424BB200636D26 /* HomePage-Slider.swift */,
 				DC1A00D21C3AA18A00CD13E2 /* HomePage.xib */,
 				DC1A00D51C3AB39A00CD13E2 /* UserCenterPage.swift */,
 				DC1A00D61C3AB39A00CD13E2 /* UserCenterPage.xib */,
@@ -1278,6 +1287,7 @@
 				DC078A2D1C284A8D003F0467 /* logo-046@3x.png in Resources */,
 				DC078A2E1C284A8D003F0467 /* logo-047.png in Resources */,
 				DC0789D71C284A8D003F0467 /* logo-018.png in Resources */,
+				DC750FBC1C42569700636D26 /* map-taxi.png in Resources */,
 				DC078A311C284A8D003F0467 /* logo-048.png in Resources */,
 				DC078A141C284A8D003F0467 /* logo-038@2x.png in Resources */,
 				DC0789F01C284A8D003F0467 /* logo-026@2x.png in Resources */,
@@ -1523,12 +1533,14 @@
 				DCC171301C3015F400A4F74C /* SelectCountryPage.swift in Sources */,
 				DC1047211C26F0E2009A12A5 /* FxGlobal.swift in Sources */,
 				DC6F5C1C1C26300D00BAB5BC /* LocationInfo.swift in Sources */,
+				DC750FBA1C424E4E00636D26 /* HomePage-Map.swift in Sources */,
 				DCC171281C2FFCFE00A4F74C /* CreateAccountPage.swift in Sources */,
 				DC6F5C241C26329D00BAB5BC /* FXGetCars.swift in Sources */,
 				DC8A8F9D1C37F2BA00D273B0 /* VerifyPhonePage.swift in Sources */,
 				DC8A8F861C37AE1F00D273B0 /* YinLianPage.swift in Sources */,
 				DC8A8F951C37BE2A00D273B0 /* FxPayPlugin.mm in Sources */,
 				DC1A00D31C3AA18A00CD13E2 /* HomePage.swift in Sources */,
+				DC750FB81C424BB200636D26 /* HomePage-Slider.swift in Sources */,
 				DCC171321C3016D300A4F74C /* CountryInfo.swift in Sources */,
 				DC6F5C221C26328500BAB5BC /* FXRegister.swift in Sources */,
 				DC6F5BDA1C259F5F00BAB5BC /* AppDelegate.swift in Sources */,
