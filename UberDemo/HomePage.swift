@@ -8,12 +8,13 @@
 
 import UIKit
 
-class HomePage: FxBasePage {
+class HomePage: FxBasePage,BMKMapViewDelegate {
     
     var leftView:UIView?
     var backControl:UIControl!
     var showingLeft:Bool!
     var centerPage:UserCenterPage?
+    var mapView:BMKMapView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,9 @@ class HomePage: FxBasePage {
         addBackControl()
         setNavigationItem("Left", selector: Selector("doShowLeft"), isRight: false)
 
-        // Do any additional setup after loading the view.
+        mapView = BMKMapView(frame: self.view.bounds)
+        
+        self.view.addSubview(mapView!)
     }
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -31,10 +34,20 @@ class HomePage: FxBasePage {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        mapView?.delegate = self
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+
         self.addLeftView()
         self.addUserCenterView()
+    }
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillAppear(animated)
+        mapView?.delegate = self
     }
     func doShowLeft(){
         if showingLeft!{
