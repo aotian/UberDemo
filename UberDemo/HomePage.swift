@@ -18,6 +18,9 @@ class HomePage: FxBasePage,BMKMapViewDelegate,BMKLocationServiceDelegate {
     var mapView:BMKMapView?
     var locService:BMKLocationService?
     var userCoordinary:CLLocationCoordinate2D?
+    var timer:NSTimer?
+    var point:BMKPointAnnotation?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,6 +49,7 @@ class HomePage: FxBasePage,BMKMapViewDelegate,BMKLocationServiceDelegate {
 
         self.addLeftView()
         self.addUserCenterView()
+        self.stopTimer()
     }
     override func viewWillDisappear(animated: Bool) {
         super.viewWillAppear(animated)

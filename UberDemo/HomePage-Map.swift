@@ -29,7 +29,7 @@ extension HomePage{
     func addBaiduMap(){
         mapView = BMKMapView(frame: self.view.bounds)
         self.view.addSubview(mapView!)
-        mapView?.zoomLevel = 19
+        mapView?.zoomLevel = 10
         startLocation()
     }
     
@@ -48,12 +48,32 @@ extension HomePage{
         
         mapView?.updateLocationData(userLocation)
         addCars()
+        self.startTimer()
         
     }
+    func startTimer(){
+        timer = NSTimer(timeInterval: 1.0, target: self, selector: Selector("updateCars"), userInfo: nil, repeats: true)
+        timer?.fire()
+    }
+    
+    func stopTimer(){
+        timer?.invalidate()
+    }
+    
+    func updateCars(){
+        userCoordinary?.latitude += 0.02
+        userCoordinary?.longitude += 0.02
+        addCars()
+    }
+    
     func addCars(){
-        let point = BMKPointAnnotation()
-        point.coordinate = CLLocationCoordinate2D(latitude: userCoordinary!.latitude+0.002, longitude: userCoordinary!.longitude+0.002)
-        point.title = "Cars"
+        mapView?.removeOverlays(mapView?.overlays)
+        if point != nil{
+            mapView?.removeAnnotation(point)
+        }
+        point = BMKPointAnnotation()
+        point!.coordinate = CLLocationCoordinate2D(latitude: userCoordinary!.latitude+0.002, longitude: userCoordinary!.longitude+0.002)
+        point!.title = "Cars"
         mapView?.addAnnotation(point)
     }
     func mapView(mapView: BMKMapView!, viewForAnnotation annotation: BMKAnnotation!) -> BMKAnnotationView! {
